@@ -6,6 +6,7 @@ Download the latest binary: https://github.com/shohamessi/f1_grid/releases/tag/v
 
 
 Donate please (helps alot)
+
 Bitcoin 1hrKwoas6dK5937WxqRNVQbcyayxPWivf
 
 Ethereum 0x5972B141099B46df4E9075aBd2fC57ab5442990c
