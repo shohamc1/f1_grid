@@ -35,8 +35,9 @@ void placeGrid (drivers &d) {
 }
 
 void drawGrid (drivers &d) {
+    cout << "---------------START LINE----------------------\n\n";
     for(int i = 0 ;i < nd ;i++){
-        for(int a = 0 ;a < 3 ;a++){
+        for(int a = 0 ;a < 4 ;a++){
 			d.gridpos[i] =i+1;
 			switch(a){
 			    case 0:
@@ -48,6 +49,8 @@ void drawGrid (drivers &d) {
 				case 2:
 				    cout << d.name[i];
                     break;
+                case 3:
+                    cout << d.time[i] << " s";
 			}
         cout << endl;
         }
@@ -59,6 +62,8 @@ void drawGrid (drivers &d) {
 int main(){
 	cout << "Register drivers\n";
 	drivers D;
+	char a;
+	int x, y;
 
 	for (int i = 0; i < nd; i++) {
         cout << "\nDriver no. " << i+1;
@@ -69,6 +74,36 @@ int main(){
         cout << "Enter lap time: ";
         cin >> D.time[i];
 	}
+	cout << "\nAre there any penalties?(Y/N) ";
+    cin >> a;
+
+	while (a == 'y' || a == 'Y'){
+            cout << "Enter car no.: ";
+            cin >> x;
+            for (int i = 0; i < nd; i++) {
+                if (D.no [i] == x) {
+                    y = i;
+                }
+                else {
+                    cout << "Wrong car number";
+                }
+            }
+            cout << "Enter grid penalty:\n1. Corner cutting\n2. Off track\n";
+            cin >> x;
+            if (x == 1) {
+                D.time [y] += 2;
+            }
+            else if (x == 2) {
+                D.time [y] += 5;
+            }
+            else {
+                cout << "Enter valid option.";
+            }
+            cout << "\nAre there any penalties? (Y/N)";
+            cin >> a;
+
+	}
+
 
 	placeGrid(D);
 	drawGrid(D);
