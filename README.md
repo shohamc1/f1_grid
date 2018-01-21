@@ -2,7 +2,7 @@
 This is a program that will accept the names, car numbers and lap times of drivers for any motorsport and then calculate the positions and accordingly draw the grid.
 The program has been completely written in C++.
 
-Download the latest binary: https://github.com/shohamessi/f1_grid/releases/tag/v1.1
+[Download the latest binary](https://github.com/shohamessi/f1_grid/releases/)
 
 
 ## Donate please (helps alot)
