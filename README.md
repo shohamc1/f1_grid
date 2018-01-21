@@ -5,7 +5,7 @@ The program has been completely written in C++.
 Download the latest binary: https://github.com/shohamessi/f1_grid/releases/tag/v1.1
 
 
-Donate please (helps alot)
+## Donate please (helps alot)
 
 - BTC 1hrKwoas6dK5937WxqRNVQbcyayxPWivf
 
